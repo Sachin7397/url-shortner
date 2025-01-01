@@ -22,11 +22,7 @@ cd url-shortener/backend
 bash
 Copy code
 npm install
-3. Configure Environment Variables
-Create a .env file in the backend directory and add the following variables:
-
-env
-Copy code
+3. Configure Environment Variables in files only
 PORT=8001
 MONGO_URI=mongodb://localhost:27017/url-shortener
 Replace MONGO_URI with your MongoDB connection string if you're using a hosted instance.
