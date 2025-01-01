@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchAnalytics = async () => {
     try {
-      const request = await get("http://localhost:8001/url/allAnalytics");
+      const request = await get("https://url-shortner-backend-u106.onrender.com/url/allAnalytics");
       if (request && request.data) {
         setAnalyticsData(request.data); // Set the full analytics data array
       } else {
@@ -40,9 +40,9 @@ const Home = () => {
 
     const payload = { url: value };
     try {
-      const request = await post("http://localhost:8001/url", payload);
+      const request = await post("https://url-shortner-backend-u106.onrender.com/url", payload);
       const response = request.data;
-      const modifiedUrl = `http://localhost:8001/${response?.id}`;
+      const modifiedUrl = `https://url-shortner-backend-u106.onrender.com/${response?.id}`;
       setShortURL(modifiedUrl);
     } catch (error) {
       console.log("error", error);
@@ -105,7 +105,7 @@ const Home = () => {
                 <tbody>
                   {analyticsData.map((data) => (
                     <tr key={data.shortId}>
-                      <td>{`http://localhost:8001/${data.shortId}`}</td>
+                      <td>{`https://url-shortner-backend-u106.onrender.com/${data.shortId}`}</td>
                       <td>{data.totalClicks}</td>
                       <td>
                         {data.analytics.length > 0 ? (
