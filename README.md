@@ -50,8 +50,8 @@ export const API_BASE_URL = "http://localhost:8001";
 bash
 Copy code
 npm start
-The frontend will run on http://localhost:3000.
+The frontend will run on http://localhost:5173.
 Running the Full Application
 Start the backend server by running npm start in the backend directory.
 Start the frontend development server by running npm start in the frontend directory.
-Open your browser and navigate to http://localhost:3000.
+Open your browser and navigate to http://localhost:5173.
